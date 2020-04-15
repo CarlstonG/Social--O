@@ -1,0 +1,16 @@
+{
+  "name": "socialmedia",
+  "version": "1.0.0",
+  "description": "Social Media Style Website",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w SCSS/ -o DIR/css/ --recursive",
+    "deploy": "gh-pages -d DIR"
+  },
+  "author": "Carlston G",
+  "license": "MIT",
+  "dependencies": {
+    "gh-pages": "^2.2.0",
+    "node-sass": "^4.13.1"
+  }
+}

@@ -1,0 +1,93 @@
+@import 'colors';
+@import 'configs';
+@import 'utilities';
+@import 'modules/landings';
+@import 'modules/form';
+
+//core styling and resets 
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    
+    font-family: $ff;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: $text-primary;
+}
+
+a {
+    text-decoration: none;
+    color: $text-primary;
+    font-weight: 600;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    width: 100%;
+
+}
+
+//nav styling //
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 2rem;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    top: 0;
+    border-bottom: solid 1px $text-primary;
+
+    ul {
+        display: flex;
+    }
+    a {
+        color: #fff;
+        padding: 0.45rem;
+        margin: 0 0.25rem;
+    
+        &:hover {
+            color: $primary-color;
+        }
+    
+    }
+
+
+}
+
+// profile page ///
+
+.profile-grid{
+    margin: 2px 2px;
+    display: grid;
+    grid-template-areas: 'top top' 'about about' 'exp exp'
+    'github github';
+    grid-gap: 1rem;
+    transition: all 0.3s ease-in;
+
+.icons a {
+
+    &:hover {
+        color: $bg-color;
+        transition: all 0.3s ease-in;
+    }
+}
+
+.skills {
+    display: flexbox;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+}

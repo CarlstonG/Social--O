@@ -1,0 +1,146 @@
+//container
+
+.container {
+
+  font-family: $ff;
+  max-width: $max-width;
+  margin: auto;
+  overflow: hidden;
+  padding: 0 2rem;
+  margin-top: 6rem;
+  margin-bottom: 3rem;
+}
+
+.text-primary {
+  color: $primary-color;
+}
+
+//backgrounds
+.x-large {
+  font-size: 4rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+  border: 2px solid rgb(252, 249, 249);
+  padding: 5px 5px;
+}
+
+.large {
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+.lead {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+
+
+
+.bg {
+    &-primary {
+      @include set-background($primary-color);
+    }
+    &-light {
+        @include set-background($light-color);
+        border: #ccc 1px solid;
+      }
+      &-dark {
+        @include set-background($dark-color);
+      }
+      &-success {
+        @include set-background($success-color);
+      }
+      &-danger {
+        @include set-background($danger-color);
+      }
+      &-white {
+        @include set-background(#ffff);
+      }
+}
+
+
+
+// Alerts
+
+.alert {
+  padding: 0.8rem;
+  margin: 1rem;
+  opacity: 0.9;
+  background: $light-color;
+  color: #333;
+
+  &.alert-primary {
+    @include set-background($primary-color)
+  }
+  &.alert-primary {
+    @include set-background($dark-color)
+  }
+  &.alert-primary {
+    @include set-background($success-color)
+  }
+  &.alert-primary {
+    @include set-background($danger-color)
+  }
+}
+
+
+
+
+
+
+//profiles
+
+.round-img{
+  border-radius: 50%;
+}
+
+//badges
+
+.badge {
+  font-size: 0.8rem;
+  padding: 0.1rem;
+  text-align: center;
+  margin: 0.3rem;
+  background: $bg-color;
+  color: #333;
+
+  &.badge-primary{
+    @include set-background($primary-color)
+    
+  }
+  &.badge-dark{
+    @include set-background($primary-color)
+  }
+  &.badge-success{
+    @include set-background($primary-color)
+  }
+  &.badge-danger{
+    @include set-background($primary-color)
+  }
+}
+
+//tables 
+
+.table  {
+th, td {
+  padding: 1rem;
+  text-align: left;
+
+}
+th{
+  background: $light-color;
+}
+
+button {
+  background: $danger-color;
+}
+}
+
+.container{
+  .btn-delete{
+    background: $danger-color;
+  }
+
+}
